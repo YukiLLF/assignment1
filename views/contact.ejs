@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="images/123.ico" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <header><h1>Contact</h1></header>
+    <link rel="stylesheet" href="style.css" />
+    <title><%= pageTitle %></title>
+
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .right {
+      width: 800px;
+      border: 1px solid black;
+      font-size: 14px;
+      line-height: 200%;
+      margin: auto;
+      margin-top: 100px;
+      background-color: burlywood;
+      padding: 20px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .right ul li {
+      list-style: none;
+      text-indent: 20px;
+    }
+
+    p {
+      text-indent: 20px;
+    }
+
+    body {
+      background-image: url(images/background1.jpg);
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  </style>
+
+  <body>
+    <div class="left">
+        <ul>
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="property list 1.html"><b>About Me</b></a>
+            </li>
+            <li>
+              <a href="property list 2.html"><b>Projects page1</b></a>
+            </li>
+            <li>
+              <a href="property list 3.html"><b>Projects page2</b></a>
+            </li>
+            <li>
+              <a href="Properties.html"><b>Projects page3</b></a>
+            </li>
+            <li>
+                <a href="Contact.html"><b>Contact Me</b></a>
+            </li>
+            <li>
+                <a href="Site Map.html"><b>Services page</b></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    <div class="right">
+      <form action="http://www.google.com" method="post">
+        <table
+          align="center"
+          border="1px"
+          bordercolor="#0000FF"
+          width="400px"
+          height="500"
+          cellpadding="0"
+          cellspacing="0"
+        >
+          <caption>
+            <font size="+1" color="red">Contact Form</font>
+          </caption>
+          <tbody>
+            <tr>
+              <th>Last name:</th>
+              <th><input type="text" name="lastname" /></th>
+            </tr>
+            <tr>
+              <th>First name:</th>
+              <th><input type="text" name="firstname" /></th>
+            </tr>
+            <tr>
+              <th>Phone:</th>
+              <th><input type="tel" name="tel" /></th>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <th><input type="email" name="email" /></th>
+            </tr>
+
+            <tr>
+              <th>Gender:</th>
+              <th>
+                female<input
+                  type="radio"
+                  name="sex"
+                  checked="true"
+                  value="female"
+                />
+                male<input
+                  type="radio"
+                  name="sex"
+                  checked="true"
+                  value="male"
+                />
+                other<input
+                  type="radio"
+                  name="sex"
+                  checked="true"
+                  value="other"
+                />
+              </th>
+            </tr>
+            <tr>
+              <th>Type of property:</th>
+              <th>
+                house<input name="Type" type="radio" value="house" />
+                condominium<input
+                  name="Type"
+                  type="radio"
+                  value="condominium"
+                />other<input name="Type" type="radio" value="other" />
+              </th>
+            </tr>
+            <tr>
+              <th>number of bedrooms:</th>
+              <th>
+                <select name="bedrooms">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th>number of bathrooms:</th>
+              <th>
+                <select name="bathrooms">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th>price range:</th>
+              <th>
+                <select name="price">
+                  <option value="1">Under $500,000</option>
+                  <option value="2">$500,000-700,000</option>
+                  <option value="3">$700,000-1,000,000</option>
+                  <option value="4">$1,000,000-2,000,000</option>
+                  <option value="5">$2,000,000-3,000,000</option>
+                  <option value="6">Over $3,000,000</option>
+                </select>
+              </th>
+            </tr>
+
+            <tr>
+              <th>Upload an image (optional)</th>
+              <th><input type="file" name="image" /></th>
+            </tr>
+            <tr>
+              <th>Additional comment</th>
+              <th><textarea name="comment" rows="10" cols="30"></textarea></th>
+            </tr>
+            <tr>
+              <th colspan="2" align="center">
+                <input type="submit" value="submit" />
+                <input type="reset" value="reset" />
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

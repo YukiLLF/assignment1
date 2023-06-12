@@ -1,0 +1,21 @@
+.left {
+  float: left;
+  width: 200px;
+  height: inherit;
+  border: 1px solid black;
+  font-size: 14px;
+  line-height: 300%;
+  margin-top: 100px;
+  background-color: gray;
+  font-weight: 400;
+  font-family: Courier, monospace;
+  font-style: normal;
+}
+a:hover {
+  background-color: yellowgreen;
+}
+h1 {
+  color: rgb(10, 10, 10);
+  font-size: 60px;
+  font-family: "Times New Roman";
+}

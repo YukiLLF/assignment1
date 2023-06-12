@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/123.ico" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <header><h1>Projects page1</h1></header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: yellowgreen;
+    }
+
+    .right {
+      width: 800px;
+      border: 1px solid black;
+      font-size: 14px;
+      line-height: 200%;
+      margin: auto;
+      margin-top: 100px;
+      background-color: burlywood;
+      text-indent: 20px;
+      padding: 20px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    body {
+      background-image: url(images/background2.jpg);
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+  </style>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&sensor=false"></script>
+
+  <script>
+    function initialize() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.12085),
+        zoom: 5,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+      };
+      var map = new google.maps.Map(
+        document.getElementById("googleMap"),
+        mapProp
+      );
+    }
+
+    google.maps.event.addDomListener(window, "load", initialize);
+  </script>
+
+  <body>
+    <div class="left">
+        <ul>
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="property list 1.html"><b>About Me</b></a>
+            </li>
+            <li>
+              <a href="property list 2.html"><b>Projects page1</b></a>
+            </li>
+            <li>
+              <a href="property list 3.html"><b>Projects page2</b></a>
+            </li>
+            <li>
+              <a href="Properties.html"><b>Projects page3</b></a>
+            </li>
+            <li>
+                <a href="Contact.html"><b>Contact Me</b></a>
+            </li>
+            <li>
+                <a href="Site Map.html"><b>Services page</b></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    <div class="right">
+      <p>
+        <img src="images/house2.png" alt="" /><br />
+        <h3>Here is my PDF resume:</h3>
+        <a href="Cheng Yuzhi's resume.pdf">Cheng Yuzhi's resume</a>
+<br>
+        <br />
+      </p>
+      <p>
+        Click here to email me <br /><a href="ycheng53@my.centennialcollege.ca"
+          >ycheng53@my.centennialcollege.ca</a
+        >
+      </p>
+    </div>
+    <footer>&copy;</footer>
+  </body>
+</html>
